@@ -1,0 +1,33 @@
+:root {
+    --x-1st: rgba(58, 58, 58, 1);
+    --white: rgba(255, 255, 255, 1);
+    --button-color: rgba(69, 99, 104, 1);
+    --x-393939: rgba(57, 57, 57, 1);
+    --border-color: rgba(128, 128, 128, 1);
+    --variable-collection-avt: initial;
+    --themes-black-100: rgba(28, 28, 28, 1);
+    --themes-black-10: rgba(28, 28, 28, 0.1);
+  }
+  
+  /*
+  
+  To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+  
+  <body data-themes-mode="light">
+      <!-- the rest of your content -->
+  </body>
+  
+  You can apply the theme on any DOM node, not just the `body`
+  
+  */
+  
+  [data-themes-mode="light"] {
+    --themes-black-100: rgba(28, 28, 28, 1);
+    --themes-black-10: rgba(28, 28, 28, 0.1);
+  }
+  
+  [data-themes-mode="dark"] {
+    --themes-black-100: rgba(255, 255, 255, 1);
+    --themes-black-10: rgba(255, 255, 255, 0.2);
+  }
+  
